@@ -1,0 +1,21 @@
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.logform{
+    display: flex;
+    margin-top: 60px;
+}
+
+.school-logo{
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+}
+
+.form-label{
+    color: darkred;
+}

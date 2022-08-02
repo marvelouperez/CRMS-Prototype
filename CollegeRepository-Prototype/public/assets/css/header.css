@@ -1,0 +1,138 @@
+body {
+    font-family: 'PT Serif', serif !important;
+    background-image: url(/public/assets/img/pup_bldg_1_blurred.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 250vh;
+    animation: fadeIn 1s;
+}
+
+/*Animations*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Navbar*/
+.navbar{
+    margin-top:30px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: #031D44;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: #031D44;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: maroon;
+}
+
+.nav-link-ltr::before {
+    margin-top: 2px;
+    width: 0%;
+    bottom: 10px;
+}
+  
+.nav-link-ltr:hover::before {
+    width: 80%;
+}
+
+
+/*Centered Title*/
+.mainTitle {
+    height: 90vh;
+    text-align: center;
+}
+
+.title {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-top: 180px;
+    box-shadow: 0 0 40px grey;
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+}
+
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid maroon;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: maroon;
+}
+
+
+#footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+    background: grey;
+}
